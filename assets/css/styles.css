@@ -497,7 +497,7 @@ ul {
     width: 100%;
     display: table;
     position: relative;
-    padding: 0 33px;
+    padding: 0 25px;
 }
 
 .nav-toggle,
@@ -572,13 +572,12 @@ nav a {
 }
 
 .nav-toggle {
-    width: 30px;
     height: 30px;
     padding: 6px 2px 0;
     position: absolute;
     top: 50%;
     margin-top: -14px;
-    right: 15px;
+    left: 10px;
     cursor: pointer;
 }
 
@@ -1086,10 +1085,15 @@ nav a {
 
 .header {
     background: #fff;
-    position: relative;
-    padding: 1.5rem 0;
+    padding: 0;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    top: 20px;
+    left: 20px;
+    border-radius: 4px;
 }
-
 .header-top {
     padding: 1em 0;
     background: #05222A
@@ -1099,7 +1103,16 @@ nav a {
     float: left
 }
 
+.nav-toggle:before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: #8A764B;
+    border-radius: 4px;
+    box-shadow: 0 .5em 0 0 #5D5033, 0 1em 0 0 #8A764B;
 
+}
 
 
 
@@ -1154,6 +1167,7 @@ nav a {
     align-items: center;
     float: left;
     width: 100%;
+    height: 100%;
     justify-content: space-between;
 }
 .navigation-portrait .mobile_nav {
@@ -1209,6 +1223,7 @@ nav a {
 	min-height:600px;
     justify-content: center;
     align-items: center;
+    background-attachment: fixed;
 }
 
 
@@ -2394,8 +2409,7 @@ margin:0;
 }
 @media (max-width: 991px) {
 	.main-banner.image-banner, .hero-header, .hero-banner, .large-banner{
-		min-height:450px;
-        max-height: 520px;
+		min-height:530px;
 	}
 	.pricing-body ul li {
 		padding: 9px 10px;
@@ -2464,11 +2478,15 @@ display:none;
     display: grid;
     justify-content: center;
 }
-h1.big-header-capt{
-    font-size: 26px;
-    line-height: 30px;
 
+.Home-projects-caption h3 , h1.big-header-capt {
+    font-size: 30px;
+    line-height: 36px;
 }
+.hero-banner p{
+ font-size: 15px;
+}
+
 section {
     padding: 60px 0 60px 0;
 }
