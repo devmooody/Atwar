@@ -38,6 +38,9 @@
 .dark #preloader {
   background-color: #232323;
 }
+h1,h2{
+    font-weight: 700;
+}
 
 #preloader {
   position: fixed;
@@ -132,6 +135,7 @@ body {
     font-family: "Roboto", serif;
 
 }
+
 .modal-open {
     overflow: hidden !important;
 }
@@ -412,7 +416,24 @@ div[data-overlay] p{
 
 /*---------- GLobal Settings: Section Heading Style ---------*/
 .sec-heading {
-	margin-bottom:3rem;
+	margin-bottom:48px;
+}
+
+.sec-heading h2 {
+font-size: 34px;
+line-height: 50px;
+letter-spacing: 0.2px;
+margin:0;
+
+}
+.sec-heading p {
+font-weight: 400;
+font-size: 17px;
+line-height: 20px;
+text-align: center;
+letter-spacing: 0.2px;
+margin-bottom: 0;
+margin-top: 10px;
 }
 .sec-heading.lg {
 	margin-bottom:30px;
@@ -476,7 +497,7 @@ ul {
     width: 100%;
     display: table;
     position: relative;
-    padding: 0 30px;
+    padding: 0 33px;
 }
 
 .nav-toggle,
@@ -634,7 +655,9 @@ nav a {
 
 .nav-menu>li {
     display: inline-block;
-    text-align: left
+    text-align: left;
+    padding-bottom: 10px;
+
 }
 
 .navigation-portrait .nav-menu>li {
@@ -924,7 +947,7 @@ nav a {
     box-shadow: 0px 0px 50px 0px rgba(32, 32, 32, 0.15);
 	-webkit-box-shadow: 0px 0px 50px 0px rgba(32, 32, 32, 0.15);
     border-radius:4px;
-    margin-top: 2px;
+    margin-top: 5px;
   
 }
 
@@ -1200,7 +1223,7 @@ nav a {
 .large-banner {
     padding: 5em 0 3em;
     display: flex;
-	min-height:660px;
+	min-height:794px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -1218,8 +1241,12 @@ nav a {
 	font-weight:800;
 	line-height:1.3;
 }
-.hero-banner p{
-	font-size:18px;
+.hero-banner p {
+    font-size: 24px;
+    letter-spacing: 0.2px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 .hero-banner p.small{
 	font-size:15px;
@@ -1251,12 +1278,14 @@ nav a {
 
 
 h1.big-header-capt {
-	font-weight:700;
+    font-weight: 700;
     margin: 0 auto;
-    margin-bottom:0.4em;
+    margin-bottom: 0.4em;
     text-align: center;
-	text-transform:uppercase;
-    font-size: 48px;
+    text-transform: uppercase;
+    font-size: 58px;
+    line-height: 67px;
+    letter-spacing: 0.2px;
 }
 
 
@@ -1270,18 +1299,61 @@ h1.big-header-capt {
 .Main-projects.sample h3{
     font-size: 24px;
 }
-/*------------- Homes Projects ----------------*/
-.Hoeprojects h2{
+/*------------- Homes Projects  ----------------*/
+
+.Home-projects img{
+max-height: 288px;
+width: 100%;
+object-fit: cover;
+
+}
+.Home-projects-caption h2{
     font-size: 34px;
     font-weight: 700;
     letter-spacing: 0.2px;
+}
+
+.Home-projects-caption{
+    position: absolute;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin:0;
+}
+
+.Home-projects-caption h3{
+font-weight: 600;
+font-size: 34px;
+line-height: 44px;
+letter-spacing: 0.2px;
+
 
 }
-.Main-projects p{
-    
-   line-height: 20px;
+.Home-projects-caption h4{
+font-weight: 400;
+font-size: 24px;
+line-height: 34px;
+}
+.Home-projects-caption p{
+font-weight: 400;
+font-size: 19px;
+line-height: 34px;
+margin:0;
 
 }
+
+/*------------- Project Projects  ----------------*/
+.Main-projects-caption h2{
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
 .Main-projects-caption{
     position: absolute;
     color: #fff;
@@ -1293,23 +1365,29 @@ h1.big-header-capt {
     width: 100%;
     text-align: center;
 }
+.Main-projects-caption{
+margin:0;
+}
 .Main-projects-caption h3{
-    font-size: 30px;
-    font-weight: 600;
-    max-width: 300px;
-    margin-bottom:5px;
+font-weight: 600;
+font-size: 34px;
+line-height: 44px;
+letter-spacing: 0.2px;
+
+
 }
 .Main-projects-caption h4{
-    font-size: 21px;
-    font-weight: 400;
-    margin-bottom:5px;
+font-weight: 400;
+font-size: 24px;
+line-height: 34px;
 }
 .Main-projects-caption p{
-font-size: 16px;
 font-weight: 400;
-margin-bottom:0;
-}
+font-size: 19px;
+line-height: 34px;
+margin:0;
 
+}
 
 /*----------- Projects Places ---------------------*/
 .pr-wrap {
@@ -1647,6 +1725,9 @@ ul.pr_list {
 .footer a{
 	position:relative;
     color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.2px;
 }
 .footer-links{
     display: flex;
@@ -1743,31 +1824,23 @@ h4.widget-title {
 footer h4{
     color: #ffffff;
 }
-footer.skin-light-footer .footer-widget ul li a, footer.skin-light-footer, footer.skin-light-footer a {
-    color:#6d8294;
-    transition: all ease 0.4s;
-    font-size: 14px;
-	font-weight:400;
-}
+
 footer .footer-widget ul li a, footer, footer a {
     color:#fff;
     transition: all ease 0.4s;
     font-size: 14px;
 	font-weight:700;
 }
-footer .footer-widget ul li a:hover, footer .footer-widget ul li a:focus{
-    color:#ffffff;
-}
-.widget_media_image {
-    margin-top: 3rem;
-}
+
+
 .header-bottom {
     padding:13px 0;
     border-top: 1px solid #e9edf3;
 }
 .footer {
     background: #8A764B;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 14px 0;
 }
 ul.header-bottom-social {
     margin: 0;
@@ -1792,7 +1865,7 @@ ul.header-bottom-social li a {
     color:#fff;
 }
 ul.header-bottom-social li a:hover, ul.header-bottom-social li a:focus{
-	color:#007bff;
+	color:#fff;
 }
 ul.header-bottom-social li i {
     margin-right: 0;
@@ -2179,7 +2252,7 @@ margin:0;
 		height:100vh;
 	}
 	.main-banner.image-banner, .hero-header, .hero-banner{
-		min-height:660px;
+		min-height:794px;
 	}
 	.hero-header.min-banner{
 		height:80vh;
@@ -2213,7 +2286,7 @@ margin:0;
 
 @media (min-width: 1400px) {
 	.main-banner.image-banner, .hero-header, .hero-banner{
-		min-height:660px;
+		min-height:794px;
 		height: 100vh;
 	}
 }
@@ -2385,7 +2458,7 @@ margin:0;
 
 @media (max-width: 767px) {
 .footer br{
-display:block;
+display:none;
 }
 .footer-links{
     display: grid;
@@ -2397,14 +2470,17 @@ h1.big-header-capt{
 
 }
 section {
-    padding: 60px 0 60px;
+    padding: 60px 0 60px 0;
 }
     .footer {
        text-align: center;
        line-height: 30px;
-       padding: 40px;
+       padding: 30px 0 30px 0;
     }
 	
+    .footer img {
+       margin-bottom: 20px;
+     }
 }
 
 
@@ -2504,14 +2580,15 @@ flex-direction: column;
             .Secondary-header {
     background: #8A764B;
     color: #fff;
-   padding:18px 34px;
+   padding:18px 33px;
    position: relative;
 }
 
 .Secondary-header a , .Secondary-header li{
     color: #fff;
     font-size: 14px;
-    font-weight: 700;
+    letter-spacing: 0.2px;
+    font-weight: 500;
 }
 .Secondary-header-links-left{
         display: flex;
