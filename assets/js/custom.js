@@ -222,28 +222,58 @@
 		});
 		
 		// our-Founder
-		$('#our-Founder').slick({
-		  slidesToShow:1,
+		$('#meet-team').slick({
+		  slidesToShow: 2.2,
 		  infinite: true,
 		  dots: true,
 		  arrows:false,
-		  autoplay:false,
+		  autoplay:true,
 		  autoplaySpeed:2000,
 		  responsive: [
 			{
 			  breakpoint: 768,
 			  settings: {
-				slidesToShow:1
+				slidesToShow:1,
 			  }
 			},
 			{
 			  breakpoint: 480,
 			  settings: {
-				slidesToShow:1
+				slidesToShow:1,
 			  }
 			}
 		  ]
 		});
+
+
+		// our-Founder
+		$('div#partner-logos').slick({
+			slidesToShow: 5,
+			infinite: false,
+			dots: false,
+			arrows:false,
+			autoplay:true,
+			autoplaySpeed:1000,
+			responsive: [
+			  {
+				breakpoint: 768,
+				settings: {
+				  slidesToShow:2,
+				}
+			  },
+			  {
+				breakpoint: 480,
+				settings: {
+				  slidesToShow:1,
+				}
+			  }
+			]
+		  });
+
+
+
+
+		
 		
 		// Property Slide
 		$('.listing-slide').slick({
@@ -736,4 +766,7 @@
 			});
 		}
 		
+
+		
 	})(this.jQuery);
+
