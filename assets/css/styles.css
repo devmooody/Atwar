@@ -2750,7 +2750,6 @@ line-height: 30px;
     position: relative;
     display: flex;
     align-items: center;
-    background-size: cover;
     background-attachment: fixed;
     justify-content: center;
   }
@@ -2781,33 +2780,24 @@ line-height: 30px;
   
   /* Responsive Design */
   @media (max-width: 1200px) {
-    .content-banner {
-      height: 500px;
-    }
+  
     .content-heading {
       font-size: 40px;
     }
   }
   
   @media (max-width: 768px) {
-    .content-banner {
-      height: 400px;
-    }
+  
     .content-heading {
       font-size: 32px;
     }
   }
   
-  @media (max-width: 576px) {
-    .content-banner {
-      height: 300px;
-      background-position: top left;
-      background-size: cover;
-    }
+
     .content-heading {
       font-size: 24px;
       padding: 0 10px;
-    }
+  
   }
 
 .About-page{
