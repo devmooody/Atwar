@@ -2780,7 +2780,10 @@ line-height: 30px;
   
   /* Responsive Design */
   @media (max-width: 1200px) {
-  
+    .content-banner {
+      height: 500px;
+      background-size: cover;
+    }
     .content-heading {
       font-size: 40px;
     }
