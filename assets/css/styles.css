@@ -2746,11 +2746,12 @@ line-height: 30px;
    /* Content Banner Styles */
 .content-banner {
     height: 595px; /* Default height */
-    background: url("../img/About/bg.png") center center / cover no-repeat fixed;
+    background: url("../img/About/bg.png");
     position: relative;
     display: flex;
     align-items: center;
     background-size: cover;
+    background-attachment: fixed;
     justify-content: center;
   }
   
