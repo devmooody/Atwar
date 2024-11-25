@@ -2790,7 +2790,9 @@ line-height: 30px;
   }
   
   @media (max-width: 768px) {
-  
+    .content-banner {
+      height: 400px;
+    }
     .content-heading {
       font-size: 32px;
     }
