@@ -150,7 +150,7 @@ body {
 	overflow-x: hidden !important;
 	font-weight: 400;
     font-family: "Roboto", serif;
-    ov
+
 }
 
 .modal-open {
@@ -2800,6 +2800,8 @@ line-height: 30px;
   @media (max-width: 576px) {
     .content-banner {
       height: 300px;
+      background-position: top left;
+      background-size: cover;
     }
     .content-heading {
       font-size: 24px;
@@ -2848,7 +2850,7 @@ font-weight: 700;
   .About-page {
     background-size: 50%;
     background-position: top center;
-    padding: 20px;
+    padding: 80px 0;
   }
 
   .About-page h2 {
@@ -2861,7 +2863,6 @@ font-weight: 700;
   .About-page p {
     font-size: 18px;
     line-height: 30px;
-    text-align: justify;
     margin-bottom: 20px;
   }
 
@@ -2903,7 +2904,6 @@ font-weight: 700;
   .About-page p {
     font-size: 16px;
     line-height: 26px;
-    text-align: justify;
     margin-bottom: 15px;
   }
 
@@ -2930,24 +2930,25 @@ font-weight: 700;
    /*------------ About Page ----------------*/
 
    section.who-are-we{
-    padding-bottom: 0;
+    margin-bottom: 0;
     display: flex;
     background: #F6F6F6;
+
    }
 
-.section {
+.section-holder {
     margin: 0 0 20px 0;
     padding: 20px 0 0 0;
     position: relative;
 }
 
-.section h3 {
+.section-holder h3 {
     font-size: 25px;
     text-transform: uppercase;
     font-weight: 700;
 }
 
-.section h1 {
+.section-holder h1 {
     font-size: 125px;
     color: #ba9770;
     font-weight: 700;
@@ -2958,7 +2959,7 @@ font-weight: 700;
 
 }
 
-.section p {
+.section-holder p {
     font-size: 36px;
     text-transform: uppercase;
     line-height: 47px;
@@ -3013,10 +3014,11 @@ font-weight: 700;
 
 /* Responsive for iPad (768px and below) */
 @media (max-width: 768px) {
-    section.who-are-we {
+    .section.who-are-we {
       flex-direction: column;
       align-items: center;
-      padding: 40px 15px;
+      padding: 70px 15px;
+      margin:0;
     }
   
     .who-are-we {
@@ -3053,7 +3055,7 @@ font-weight: 700;
   @media (max-width: 480px) {
     section.who-are-we {
       flex-direction: column;
-      padding: 15px;
+      padding: 70px 15px;
     }
   
     .who-are-we {
@@ -3794,7 +3796,7 @@ margin-bottom: 48px;
 
           @media (max-width: 767px) {
             .founder-card-body {
-bottom:0;
+bottom:20px;
 
             }
           .founder-card {
@@ -3805,7 +3807,7 @@ bottom:0;
 
             .founder-card img {
     width: 100%;
-    max-height: 300px;
+    max-height: 450px;
    
 }
         }
